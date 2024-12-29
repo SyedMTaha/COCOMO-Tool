@@ -73,7 +73,7 @@ const FunctionPointsCalculator = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-gray-900 text-gray-100 font-sans p-6">
+    <div className="min-h-screen w-full bg-gray-900 text-gray-100 font-sans p-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">
           Function Points Calculator
