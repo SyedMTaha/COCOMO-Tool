@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Estimation = () => {
   const [sloc, setSloc] = useState("");
@@ -164,6 +165,10 @@ const Estimation = () => {
           <p>Time: <span className="font-bold">{time}</span> Months</p>
           <p>Cost: <span className="font-bold">${cost}</span></p>
         </div>
+        <Link to="/" className="block mt-8 text-center px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white">
+          Go to Home Page
+        </Link>
+
       </div>
     </div>
   );

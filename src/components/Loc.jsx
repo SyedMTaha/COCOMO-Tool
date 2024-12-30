@@ -110,21 +110,17 @@ const SlocCalculator = () => {
         </div>
 
         <div className="text-center">
-          <button
-            onClick={() => window.location.href = 'estimate.html'}
-            className="px-6 py-2 bg-green-600 hover:bg-green-500 rounded text-white font-semibold"
-          >
+          
+            <Link to="/estimation"  className="px-6 py-2 bg-green-600 hover:bg-green-500 rounded text-white font-semibold">
             Estimate Effort, Cost, Time
-          </button>
+            </Link>
+          
         </div>
 
         <hr className="my-8 border-gray-700" />
 
         <div className="text-center">
-          <Link
-            to="/"
-            className="px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-semibold"
-          >
+          <Link to="/" className="block mt-8 text-center px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white">
             Go to Home Page
           </Link>
         </div>

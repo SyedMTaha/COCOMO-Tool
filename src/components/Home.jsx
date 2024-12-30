@@ -8,7 +8,7 @@ const Home = () => {
       <div className="w-full max-w-5xl mx-auto bg-gray-800 rounded-lg shadow-lg p-8 space-y-5">
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-gray-100">COCOMO-II SIMULATOR</h1>
+          <h1 className="text-5xl font-extrabold text-gray-100">COCOMO SIMULATOR</h1>
           <p className="text-xl text-gray-400 mt-4">
             An application software for estimating software development.
           </p>
@@ -20,7 +20,7 @@ const Home = () => {
             Introduction:
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            The COCOMO-II Simulator is an application program that is used for cost estimation of software to be
+            The COCOMO Simulator is an application program that is used for cost estimation of software to be
             developed. Software cost estimation involves the determination of estimates of effort, development time, and
             cost of the software to be developed. The user rates 17 cost drivers and 5 scale drivers and provides the labor rate.
           </p>

@@ -5,11 +5,12 @@ const FunctionPointsCalculator = () => {
   const [ufp, setUfp] = useState("");
   const [di, setDi] = useState("");
   const [fp, setFp] = useState("");
+  const [weightingFactor, setWeightingFactor] = useState("");
 
   const calculateUFP = () => {
-    const x = Number(document.getElementById("wf").value);
+    console.log(weightingFactor);
+    const x = Number(weightingFactor);
     let temp1, temp2, temp3, temp4, temp5;
-
     if (x === 1) {
       temp1 = 3;
       temp2 = 4;
@@ -29,14 +30,13 @@ const FunctionPointsCalculator = () => {
       temp4 = 15;
       temp5 = 10;
     }
+    else{
+      alert("Enter 1-3")
+    }
 
-    const p = Number(document.getElementById("in").value);
-    const q = Number(document.getElementById("out").value);
-    const r = Number(document.getElementById("inq").value);
-    const s = Number(document.getElementById("files").value);
-    const t = Number(document.getElementById("ext_int").value);
-
-    const calculatedUFP = temp1 * p + temp2 * q + temp3 * r + temp4 * s + temp5 * t;
+    //if()
+    const calculatedUFP =
+      temp1 * x + temp2 * x + temp3 * x + temp4 * x + temp5 * x;
     setUfp(calculatedUFP);
   };
 
@@ -94,17 +94,38 @@ const FunctionPointsCalculator = () => {
             <tbody>
               <tr>
                 <td className="px-4 py-2">1</td>
-                <td className="px-4 py-2">Number of User Inputs</td>
+                <td className="px-4 py-2">External Inputs (EI)</td>
                 <td className="px-4 py-2">3</td>
                 <td className="px-4 py-2">4</td>
                 <td className="px-4 py-2">6</td>
               </tr>
               <tr>
                 <td className="px-4 py-2">2</td>
-                <td className="px-4 py-2">Number of User Outputs</td>
+                <td className="px-4 py-2">External Outputs (EO)</td>
                 <td className="px-4 py-2">4</td>
                 <td className="px-4 py-2">5</td>
                 <td className="px-4 py-2">7</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">3</td>
+                <td className="px-4 py-2">External Inquiries (EQ)</td>
+                <td className="px-4 py-2">3</td>
+                <td className="px-4 py-2">4</td>
+                <td className="px-4 py-2">6</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">4</td>
+                <td className="px-4 py-2">Internal Logical Files (ILF)</td>
+                <td className="px-4 py-2">7</td>
+                <td className="px-4 py-2">10</td>
+                <td className="px-4 py-2">15</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">5</td>
+                <td className="px-4 py-2">External Interface Files (EIF)</td>
+                <td className="px-4 py-2">5</td>
+                <td className="px-4 py-2">7</td>
+                <td className="px-4 py-2">10</td>
               </tr>
               {/* Add more rows as necessary */}
             </tbody>
@@ -116,6 +137,7 @@ const FunctionPointsCalculator = () => {
               id="wf"
               className="w-full px-4 py-2 bg-gray-800 text-gray-100 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter S.No"
+              onChange={(e) => setWeightingFactor(e.target.value)}
             />
           </div>
           <button
