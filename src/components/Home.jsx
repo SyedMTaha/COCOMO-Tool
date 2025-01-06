@@ -8,7 +8,7 @@ const Home = () => {
       <div className="w-full max-w-5xl mx-auto bg-gray-800 rounded-lg shadow-lg p-8 space-y-5">
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-gray-100">COCOMO SIMULATOR</h1>
+          <h1 className="text-5xl font-extrabold text-gray-100">COCOMO CALCULATOR</h1>
           <p className="text-xl text-gray-400 mt-4">
             An application software for estimating software development.
           </p>
@@ -65,7 +65,7 @@ const Home = () => {
       {/* Footer Section */}
       <footer className="w-full text-center  py-2 bg-gray-900  ">
         <p className="text-gray-400 text-sm">
-          © {new Date().getFullYear()} COCOMO-II Simulator. All rights reserved. Developed By Syed M. Taha
+          © {new Date().getFullYear()} COCOMO Calculator. All rights reserved. Developed By Syed M. Taha
         </p>
       </footer></>
   );

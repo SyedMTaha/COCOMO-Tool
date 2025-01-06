@@ -150,7 +150,7 @@ const FunctionPointsCalculator = () => {
         </div>
 
         <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Step 2: Calculate DI</h2>
+          <h2 className="text-xl font-semibold mb-4">Step 2: Calculate VAF</h2>
           <p className="mb-4 text-sm">
             Answer the questions in the prompt (0-5 for each question).
           </p>
@@ -160,7 +160,7 @@ const FunctionPointsCalculator = () => {
           >
             Answer Questions
           </button>
-          <p className="mt-4">DI: {di}</p>
+          <p className="mt-4">VAF: {di}</p>
         </div>
 
         <div>
